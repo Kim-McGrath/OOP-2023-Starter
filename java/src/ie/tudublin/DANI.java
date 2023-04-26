@@ -6,6 +6,31 @@ import processing.core.PApplet;
 
 public class DANI extends PApplet {
 
+	public class Follow extends PApplet {
+		String word;
+		int count = 0;
+		
+		public void Word(String word, int count)
+		{		
+			
+		
+		}
+
+
+	}
+
+	public class Word extends PApplet {
+
+	}
+
+	public void loadFile() {
+		loadStrings("filename.txt"); // Load a text file into a String array
+		split(line, ' '); // Split a string into an array of words
+		w.replaceAll("[^\\w\\s]",""); // Remove punction characters
+		s.toLowerCase() // Convert a string to lower case 
+	}
+
+
 	
 
 	public void settings() {
